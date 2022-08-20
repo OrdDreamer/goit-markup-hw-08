@@ -1,0 +1,29 @@
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo_accent-text {
+  color: var(--accent-color);
+}
+
+.logo_theme_light {
+  margin-right: 93px;
+
+  &,
+  &:visited,
+  &:active {
+    color: #000000;
+  }
+}
+
+.logo_theme_dark {
+  &,
+  &:visited,
+  &:active {
+    color: var(--primary-text-color-theme-dark);
+  }
+}

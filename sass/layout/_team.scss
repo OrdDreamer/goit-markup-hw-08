@@ -55,5 +55,5 @@
 .employee-card__social-list {
   justify-content: center;
   margin-top: 16px;
-  @extend centering-x;
+  @extend %centering-x;
 }

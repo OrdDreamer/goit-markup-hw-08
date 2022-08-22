@@ -8,7 +8,7 @@
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
-  @extend centering-x;
+  @extend %centering-x;
 }
 
 .hero__title {
@@ -20,7 +20,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   max-width: 670px;
-  @extend centering-x;
+  @extend %centering-x;
 }
 
 .order-button {
@@ -46,5 +46,5 @@
 
 .hero__order-button {
   margin-top: 30px;
-  @extend centering-x;
+  @extend %centering-x;
 }

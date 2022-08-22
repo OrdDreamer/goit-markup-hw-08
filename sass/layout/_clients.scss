@@ -35,5 +35,5 @@
 
 .clients__item-icon {
   display: block;
-  @extend centering-x;
+  @extend %centering-x;
 }

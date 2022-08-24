@@ -5,40 +5,6 @@
   letter-spacing: 0.02em;
 }
 
-.contact-phone_theme_light,
-.contact-email_theme_light {
-  color: var(--secondary-text-color-theme-light);
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color var(--transition-dur-and-fun), fill var(--transition-dur-and-fun);
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
-
-.contact-email__icon,
-.contact-phone__icon {
-  display: block;
-  margin-right: 10px;
-
-  .contact-phone_theme_light &,
-  .contact-email_theme_light & {
-    fill: var(--secondary-text-color-theme-light);
-  }
-
-  .contact-phone_theme_light:hover &,
-  .contact-phone_theme_light:focus &,
-  .contact-email_theme_light:hover &,
-  .contact-email_theme_light:focus & {
-    fill: var(--accent-color);
-  }
-}
-
 .contact-phone_theme_dark,
 .contact-email_theme_dark {
   color: var(--secondary-text-color-theme-dark);

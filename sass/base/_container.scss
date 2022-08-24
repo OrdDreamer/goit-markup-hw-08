@@ -1,7 +1,23 @@
 .container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  @extend %centering-x;
+}
+
+@include media-from-mobile-resolution() {
+  .container {
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@include media-from-tablet-resolution {
+  .container {
+    width: 768px;
+  }
+}
+
+@include media-from-desktop-resolution {
+  .container {
+    width: 1200px;
+  }
 }

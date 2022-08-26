@@ -43,18 +43,18 @@
 @include media-from-tablet-resolution {
   .hero {
     max-width: 768px;
-    background-image: var(--background-style), url(../../images/hero/background_768x400@1x.jpg);
+    background-image: var(--background-style), url(../images/hero/background_768x400@1x.jpg);
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
-      background-image: var(--background-style), url(../../images/hero/background_768x400@2x.jpg);
+      background-image: var(--background-style), url(../images/hero/background_768x400@2x.jpg);
     }
   }
 
   @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
     .hero {
-      background-image: var(--background-style), url(../../images/hero/background_768x400@3x.jpg);
+      background-image: var(--background-style), url(../images/hero/background_768x400@3x.jpg);
     }
   }
 }
@@ -64,18 +64,18 @@
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
-    background-image: var(--background-style), url(../../images/hero/background_1600x600@1x.jpg);
+    background-image: var(--background-style), url(../images/hero/background_1600x600@1x.jpg);
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
-      background-image: var(--background-style), url(../../images/hero/background_1600x600@2x.jpg);
+      background-image: var(--background-style), url(../images/hero/background_1600x600@2x.jpg);
     }
   }
 
   @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
     .hero {
-      background-image: var(--background-style), url(../../images/hero/background_1600x600@3x.jpg);
+      background-image: var(--background-style), url(../images/hero/background_1600x600@3x.jpg);
     }
   }
 

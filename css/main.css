@@ -676,17 +676,17 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    background-image: var(--background-style), url(../../images/hero/background_768x400@1x.jpg);
+    background-image: var(--background-style), url(../images/hero/background_768x400@1x.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--background-style), url(../../images/hero/background_768x400@2x.jpg);
+    background-image: var(--background-style), url(../images/hero/background_768x400@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 3), screen and (min-width: 768px) and (min-resolution: 288dpi), screen and (min-width: 768px) and (min-resolution: 3dppx) {
   .hero {
-    background-image: var(--background-style), url(../../images/hero/background_768x400@3x.jpg);
+    background-image: var(--background-style), url(../images/hero/background_768x400@3x.jpg);
   }
 }
 @media screen and (min-width: 1600px) {
@@ -694,17 +694,17 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
-    background-image: var(--background-style), url(../../images/hero/background_1600x600@1x.jpg);
+    background-image: var(--background-style), url(../images/hero/background_1600x600@1x.jpg);
   }
 }
 @media screen and (min-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1600px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--background-style), url(../../images/hero/background_1600x600@2x.jpg);
+    background-image: var(--background-style), url(../images/hero/background_1600x600@2x.jpg);
   }
 }
 @media screen and (min-width: 1600px) and (min-device-pixel-ratio: 3), screen and (min-width: 1600px) and (min-resolution: 288dpi), screen and (min-width: 1600px) and (min-resolution: 3dppx) {
   .hero {
-    background-image: var(--background-style), url(../../images/hero/background_1600x600@3x.jpg);
+    background-image: var(--background-style), url(../images/hero/background_1600x600@3x.jpg);
   }
 }
 @media screen and (min-width: 1600px) {

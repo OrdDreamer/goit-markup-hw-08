@@ -1,12 +1,12 @@
 .container {
   @extend %centering-x;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @include media-from-mobile-resolution() {
   .container {
     width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 

@@ -1,4 +1,13 @@
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@include media-to-desktop-resolution {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@include media-from-desktop-resolution {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }

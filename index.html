@@ -197,12 +197,11 @@
             <li class="about-us__item">
               <div class="about-us__item-image-wrapper">
                 <img
-                  src="./images/what-we-do/what-we-do-1_370x294@1x.jpg 1x"
                   srcset="
-                    ./images/what-we-do/what-we-do-1_370x294@1x.jpg 1x,
                     ./images/what-we-do/what-we-do-1_370x294@2x.jpg 2x,
                     ./images/what-we-do/what-we-do-1_370x294@3x.jpg 3x
                   "
+                  src="./images/what-we-do/what-we-do-1_370x294@1x.jpg"
                   alt="Людина пише програмний код"
                   width="370"
                   height="294"
@@ -213,12 +212,11 @@
             <li class="about-us__item">
               <div class="about-us__item-image-wrapper">
                 <img
-                  src="./images/what-we-do/what-we-do-1_370x294@1x.jpg 1x"
                   srcset="
-                    ./images/what-we-do/what-we-do-2_370x294@1x.jpg 1x,
                     ./images/what-we-do/what-we-do-2_370x294@2x.jpg 2x,
                     ./images/what-we-do/what-we-do-2_370x294@3x.jpg 3x
                   "
+                  src="./images/what-we-do/what-we-do-2_370x294@1x.jpg"
                   alt="Людина працює з макетом"
                   width="370"
                   height="294"
@@ -229,12 +227,11 @@
             <li class="about-us__item">
               <div class="about-us__item-image-wrapper">
                 <img
-                  src="./images/what-we-do/what-we-do-1_370x294@1x.jpg 1x"
                   srcset="
-                    ./images/what-we-do/what-we-do-3_370x294@1x.jpg 1x,
                     ./images/what-we-do/what-we-do-3_370x294@2x.jpg 2x,
                     ./images/what-we-do/what-we-do-3_370x294@3x.jpg 3x
                   "
+                  src="./images/what-we-do/what-we-do-3_370x294@1x.jpg"
                   alt="Людина обирає колір на палітрі"
                   width="370"
                   height="294"
@@ -252,13 +249,42 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="employee-card team__item">
-              <img
-                class="employee-card__image"
-                src="images/team/igor-demyanenko.jpg"
-                alt="Фотография игоря"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/team/igor-demyanenko/igor-demyanenko-270x260@1x.jpg 1x,
+                    images/team/igor-demyanenko/igor-demyanenko-270x260@2x.jpg 2x,
+                    images/team/igor-demyanenko/igor-demyanenko-270x260@3x.jpg 3x
+                  "
+                  media="(min-width: 1600px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    images/team/igor-demyanenko/igor-demyanenko-354x374@1x.jpg 1x,
+                    images/team/igor-demyanenko/igor-demyanenko-354x374@2x.jpg 2x,
+                    images/team/igor-demyanenko/igor-demyanenko-354x374@3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    images/team/igor-demyanenko/igor-demyanenko-450x460@1x.jpg 1x,
+                    images/team/igor-demyanenko/igor-demyanenko-450x460@2x.jpg 2x,
+                    images/team/igor-demyanenko/igor-demyanenko-450x460@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="employee-card__image"
+                  src="images/team/igor-demyanenko/igor-demyanenko-450x460@1x.jpg"
+                  alt="Фотографія Ігоря"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="employee-card__content-wrapper">
                 <h3 class="employee-card__title">Ігор Дем'яненко</h3>
                 <p class="employee-card__description" lang="en">Product Designer</p>
@@ -295,13 +321,42 @@
               </div>
             </li>
             <li class="employee-card team__item">
-              <img
-                class="employee-card__image"
-                src="images/team/olga-repina.jpg"
-                alt="Фотография Ольги"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/team/olga-repina/olga-repina-270x260@1x.jpg 1x,
+                    images/team/olga-repina/olga-repina-270x260@2x.jpg 2x,
+                    images/team/olga-repina/olga-repina-270x260@3x.jpg 3x
+                  "
+                  media="(min-width: 1600px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    images/team/olga-repina/olga-repina-354x374@1x.jpg 1x,
+                    images/team/olga-repina/olga-repina-354x374@2x.jpg 2x,
+                    images/team/olga-repina/olga-repina-354x374@3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    images/team/olga-repina/olga-repina-450x460@1x.jpg 1x,
+                    images/team/olga-repina/olga-repina-450x460@2x.jpg 2x,
+                    images/team/olga-repina/olga-repina-450x460@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="employee-card__image"
+                  src="images/team/olga-repina/olga-repina-450x460@1x.jpg"
+                  alt="Фотографія Ольги"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="employee-card__content-wrapper">
                 <h3 class="employee-card__title">Ольга Рєпіна</h3>
                 <p class="employee-card__description" lang="en">Frontend Developer</p>
@@ -338,13 +393,42 @@
               </div>
             </li>
             <li class="employee-card team__item">
-              <img
-                class="employee-card__image"
-                src="images/team/nikolay-tarasov.jpg"
-                alt="Фотография Николая"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/team/nikolay-tarasov/nikolay-tarasov-270x260@1x.jpg 1x,
+                    images/team/nikolay-tarasov/nikolay-tarasov-270x260@2x.jpg 2x,
+                    images/team/nikolay-tarasov/nikolay-tarasov-270x260@3x.jpg 3x
+                  "
+                  media="(min-width: 1600px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    images/team/nikolay-tarasov/nikolay-tarasov-354x374@1x.jpg 1x,
+                    images/team/nikolay-tarasov/nikolay-tarasov-354x374@2x.jpg 2x,
+                    images/team/nikolay-tarasov/nikolay-tarasov-354x374@3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    images/team/nikolay-tarasov/nikolay-tarasov-450x460@1x.jpg 1x,
+                    images/team/nikolay-tarasov/nikolay-tarasov-450x460@2x.jpg 2x,
+                    images/team/nikolay-tarasov/nikolay-tarasov-450x460@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="employee-card__image"
+                  src="images/team/nikolay-tarasov/nikolay-tarasov-450x460@1x.jpg"
+                  alt="Фотографія Миколи"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="employee-card__content-wrapper">
                 <h3 class="employee-card__title">Микола Тарасов</h3>
                 <p class="employee-card__description" lang="en">Marketing</p>
@@ -381,13 +465,42 @@
               </div>
             </li>
             <li class="employee-card team__item">
-              <img
-                class="employee-card__image"
-                src="images/team/mikhail-ermakov.jpg"
-                alt="Фотография Михаила"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/team/mikhail-ermakov/mikhail-ermakov-270x260@1x.jpg 1x,
+                    images/team/mikhail-ermakov/mikhail-ermakov-270x260@2x.jpg 2x,
+                    images/team/mikhail-ermakov/mikhail-ermakov-270x260@3x.jpg 3x
+                  "
+                  media="(min-width: 1600px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    images/team/mikhail-ermakov/mikhail-ermakov-354x374@1x.jpg 1x,
+                    images/team/mikhail-ermakov/mikhail-ermakov-354x374@2x.jpg 2x,
+                    images/team/mikhail-ermakov/mikhail-ermakov-354x374@3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    images/team/mikhail-ermakov/mikhail-ermakov-450x460@1x.jpg 1x,
+                    images/team/mikhail-ermakov/mikhail-ermakov-450x460@2x.jpg 2x,
+                    images/team/mikhail-ermakov/mikhail-ermakov-450x460@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="employee-card__image"
+                  src="images/team/mikhail-ermakov/mikhail-ermakov-450x460@1x.jpg"
+                  alt="Фотографія Михайла"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="employee-card__content-wrapper">
                 <h3 class="employee-card__title">Михайло Єрмаков</h3>
                 <p class="employee-card__description" lang="en">UI Designer</p>
@@ -426,151 +539,7 @@
           </ul>
         </div>
       </section>
-
-      <!-- Clients -->
-      <section class="section clients">
-        <div class="container">
-          <h2 class="clients__title">Постійні клієнти</h2>
-          <ul class="list clients__list">
-            <li class="clients__item">
-              <a href="" class="clients__item-link">
-                <svg class="clients__item-icon" width="106" height="60">
-                  <use href="images/icons.svg#client-first-company"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients__item">
-              <a href="" class="clients__item-link">
-                <svg class="clients__item-icon" width="106" height="60">
-                  <use href="images/icons.svg#client-second-company"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients__item">
-              <a href="" class="clients__item-link">
-                <svg class="clients__item-icon" width="106" height="60">
-                  <use href="images/icons.svg#client-third-company"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients__item">
-              <a href="" class="clients__item-link">
-                <svg class="clients__item-icon" width="106" height="60">
-                  <use href="images/icons.svg#client-fourth-company"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients__item">
-              <a href="" class="clients__item-link">
-                <svg class="clients__item-icon" width="106" height="60">
-                  <use href="images/icons.svg#client-fifth-company"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients__item">
-              <a href="" class="clients__item-link">
-                <svg class="clients__item-icon" width="106" height="60">
-                  <use href="images/icons.svg#client-sixth-company"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
     </main>
-
-    <!-- Footer -->
-    <footer class="page-footer">
-      <div class="container page-footer__container">
-        <div class="page-footer__main">
-          <a class="logo logo_theme_dark link" href="">
-            <span class="logo_accent-text">Web</span>Studio
-          </a>
-          <address class="address">
-            <ul class="list address__list">
-              <li class="address__item">
-                <a
-                  class="link address__link"
-                  href="https://goo.gl/maps/eCd9pNnfb7Bx4vSe9"
-                  target="_blank"
-                  rel="noopener noreferer"
-                >
-                  м. Київ, пр-т Лесі Українки, 26
-                </a>
-              </li>
-              <li class="address__item">
-                <a
-                  class="link contact-email contact-email_theme_dark"
-                  href="mailto:info@example.com"
-                >
-                  info@example.com
-                </a>
-              </li>
-              <li class="address__item">
-                <a class="link contact-phone contact-phone_theme_dark" href="tel:+380961111111">
-                  +38 096 111 11 11
-                </a>
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="footer__social">
-          <p class="footer__subblock-title">Приєднуйтесь</p>
-          <ul class="list social-list footer__social-list">
-            <li class="social-list__item">
-              <a href="" class="social-list__item-link footer__social-item-link">
-                <svg class="social-list__item-icon" width="20" height="20">
-                  <use href="images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="" class="social-list__item-link footer__social-item-link">
-                <svg class="social-list__item-icon" width="20" height="20">
-                  <use href="images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="" class="social-list__item-link footer__social-item-link">
-                <svg class="social-list__item-icon" width="20" height="20">
-                  <use href="images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="" class="social-list__item-link footer__social-item-link">
-                <svg class="social-list__item-icon" width="20" height="20">
-                  <use href="images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-subscription">
-          <p class="footer__subblock-title">Підпишіться на розсилку</p>
-          <form class="subscription-form">
-            <div class="subscription-form__input-wrapper">
-              <input
-                name="subscription_email"
-                id="subscription-email"
-                type="email"
-                class="subscription-form__input"
-                placeholder="E-mail"
-                required
-              />
-              <label for="subscription-email" class="visually-hidden">E-mail</label>
-            </div>
-            <button type="submit" class="subscription-form__submit">
-              Підписатися
-              <svg class="subscription-form__submit-icon" width="24" height="24">
-                <use href="images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
-      </div>
-    </footer>
 
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>

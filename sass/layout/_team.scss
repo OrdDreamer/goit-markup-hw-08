@@ -3,21 +3,16 @@
 }
 
 .team__title {
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
 .team__list {
   display: flex;
-  margin-top: 50px;
-  flex-wrap: wrap;
+  margin-top: 30px;
   gap: 30px;
-}
-
-.team__item {
-  flex-basis: calc((100% - 90px) / 4);
 }
 
 .employee-card {
@@ -29,7 +24,6 @@
 
 .employee-card__content-wrapper {
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .employee-card__image {
@@ -56,4 +50,45 @@
   justify-content: center;
   margin-top: 16px;
   @extend %centering-x;
+}
+
+@include media-to-tablet-resolution {
+  .team__list {
+    flex-direction: column;
+  }
+}
+
+@include media-from-tablet-resolution {
+  .team__list {
+    flex-wrap: wrap;
+  }
+
+  .team__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@include media-to-desktop-resolution {
+  .employee-card__content-wrapper {
+    padding-bottom: 24px;
+  }
+}
+
+@include media-from-desktop-resolution {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+
+  .team__list {
+    margin-top: 50px;
+  }
+
+  .team__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+
+  .employee-card__content-wrapper {
+    padding-bottom: 30px;
+  }
 }

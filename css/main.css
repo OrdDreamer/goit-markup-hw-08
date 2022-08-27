@@ -67,11 +67,18 @@ body {
   color: var(--primary-text-color-theme-light);
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1599px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
-
+@media screen and (min-width: 1600px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -722,10 +729,6 @@ body {
     padding: 10px 32px;
   }
 }
-.benefits {
-  padding-bottom: 60px;
-}
-
 .benefits__list {
   display: flex;
   gap: 30px;
@@ -848,21 +851,16 @@ body {
 }
 
 .team__title {
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
 .team__list {
   display: flex;
-  margin-top: 50px;
-  flex-wrap: wrap;
+  margin-top: 30px;
   gap: 30px;
-}
-
-.team__item {
-  flex-basis: calc((100% - 90px) / 4);
 }
 
 .employee-card {
@@ -873,7 +871,6 @@ body {
 
 .employee-card__content-wrapper {
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .employee-card__image {
@@ -901,6 +898,39 @@ body {
   margin-top: 16px;
 }
 
+@media screen and (max-width: 767px) {
+  .team__list {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    flex-wrap: wrap;
+  }
+  .team__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (max-width: 1599px) {
+  .employee-card__content-wrapper {
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+  .team__list {
+    margin-top: 50px;
+  }
+  .team__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  .employee-card__content-wrapper {
+    padding-bottom: 30px;
+  }
+}
 .clients__title {
   font-size: 36px;
   line-height: 1.16;

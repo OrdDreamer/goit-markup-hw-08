@@ -282,7 +282,7 @@ body {
 }
 
 .modal-window {
-  width: 528px;
+  width: calc(100% - 10px);
   background: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -292,6 +292,16 @@ body {
   transform: translate(-50%, -50%);
 }
 
+@media screen and (min-width: 480px) {
+  .modal-window {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .modal-window {
+    width: 528px;
+  }
+}
 .modal-window__close-button {
   background-color: transparent;
   padding: 0;
@@ -324,6 +334,11 @@ body {
   flex-direction: column;
 }
 
+@media screen and (max-width: 425px) {
+  .modal-form {
+    padding: 20px;
+  }
+}
 .modal-form__description {
   font-weight: 700;
   font-size: 20px;
@@ -434,18 +449,19 @@ body {
 }
 
 .modal-form__check-policy-description {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color-theme-light);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 30px;
 }
 .modal-form__check-policy-description::before {
   content: "";
   display: block;
-  position: absolute;
+  position: relative;
   width: 16px;
   height: 15px;
   border: 2px solid var(--dark-background-color);
@@ -470,7 +486,7 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  padding: 10px 56px;
+  padding: 10px 52px;
   color: var(--primary-text-color-theme-dark);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
